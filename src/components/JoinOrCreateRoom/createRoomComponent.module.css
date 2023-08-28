@@ -1,0 +1,127 @@
+.create-room{
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.create-room label{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+}
+
+.customTextField{
+    height: 4.5rem;
+    background: rgba( 236, 4, 230, 0.25 );
+    backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    
+    font-size: 1.3rem;
+    color: white;
+    vertical-align: baseline;
+
+    border: none;
+
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.errorText{
+    display: none;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 5px;
+    color: red;
+}
+
+.error{
+    display: block;
+    animation: jerkLeftToRight linear 500ms;
+}
+
+@keyframes jerkLeftToRight {
+    0%{
+        transform: translateX(10px);
+    }
+    10%{
+        transform: translateX(-20px);
+    }
+    20%{
+        transform: translateX(18px);
+    }
+    30%{
+        transform: translateX(-16px);
+    }
+    40%{
+        transform: translateX(13px);
+    }
+    60%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.button-container{
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+.button-grp{
+    height: fit-content;
+    width: fit-content;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3rem;
+    
+    
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 5px;
+
+
+}
+
+.button-grp:hover{
+    -webkit-box-shadow: 1px 0px 15px 4px rgba(230,113,230,1);
+    -moz-box-shadow: 1px 0px 15px 4px rgba(230,113,230,1);
+    box-shadow: 1px 0px 15px 4px rgba(230,113,230,1);
+}
+
+.button-grp p{
+    padding: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.button-grp .rightArrow{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightArrow img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.transition-left{
+    transform: translateX(50%);
+}

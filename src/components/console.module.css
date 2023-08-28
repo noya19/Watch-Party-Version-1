@@ -1,0 +1,22 @@
+.console{
+    width: 75%;
+    /* border: 1px solid black; */
+    background-color: rgb(42, 41, 41);
+    border-radius: 1.5rem;
+
+    margin-right: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 1px solid white; */
+}
+
+
+@media screen and (max-width: 562px) {
+    .console{
+        margin-right: 0;
+        flex: none;
+        height:300px;
+    }
+}

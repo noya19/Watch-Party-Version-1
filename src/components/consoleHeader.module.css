@@ -1,0 +1,73 @@
+
+.consoleHeader {
+    height: 4rem;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.consoleHeader .roomInfo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+    background-color: aliceblue;
+    border-radius: 1.5rem;
+
+
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    transition: 0.4s;
+    background-color: black;
+}
+
+.consoleHeader .roomInfo img{
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 0.4rem;
+    margin-right: 1rem;
+}
+
+.roomInfo div{
+    display: flex;
+    align-items: center;
+}
+
+.roomInfo div p{
+    min-width: 313px;
+    color: white;
+    white-space: nowrap;
+}
+
+.roomInfo div button{
+    border-radius: 0;
+    border-left: 1px solid white;
+    background-color: black;
+}
+
+.roomInfo div button:active,
+.roomInfo div button:hover{
+    background-color: transparent;
+}
+
+.consoleHeader .roomInfo:hover{
+    height: 60px;
+    width: 28rem;
+}
+
+.consoleHeader .roomInfo:hover .roomInfo img{
+    margin-left: 0.7rem ;
+}
+
+.consoleHeader .hostControls{
+    position: absolute;
+    right: 0.5rem;
+}

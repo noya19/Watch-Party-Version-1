@@ -1,0 +1,55 @@
+/*---Transition Group for Join Room*/
+.createRoom-enter{
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.createRoom-enter-active{
+   transform: translateX(0%);
+   transition: all 150ms ease;
+}
+
+.createRoom-exit{
+    position: absolute;
+}
+
+.createRoom-exit-active{
+    transform: translateX(-100%);
+    transition: all 150ms ease;
+}
+
+/*---Transition Group for Avatar */
+
+.avatarSelect-enter{
+    transform: translateX(100%);
+}
+
+.avatarSelect-enter-active{
+    transform: translateX(0%);
+    transition: all 150ms ease-in;
+}
+
+.avatarSelect-exit-active{
+    transform: translateX(100%);
+    transition: all 150ms ease-out;
+}
+
+/*---------Join Room -----------------*/
+.joinRoom-enter{
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.joinRoom-enter-active{
+   transform: translateX(0%);
+   transition: all 150ms ease;
+}
+
+.joinRoom-exit{
+    position: absolute;
+}
+
+.joinRoom-exit-active{
+    transform: translateX(-100%);
+    transition: all 150ms ease;
+}

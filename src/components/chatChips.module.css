@@ -1,0 +1,101 @@
+.message{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column
+}
+
+.message .chats{
+    width: max-content;
+    max-width: 300px;
+    color: white;
+    background-color: #3c3c3c;
+    padding: 1rem;
+    border-radius: 1rem;
+    line-break: strict;
+    font-size: 1.5rem;
+}
+
+
+.singleMessageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notMySingleMessage{
+    flex-direction: row-reverse;
+}
+
+.singleMessageContainer img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.singleMessageContainer .singleInfo1{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    margin: 25px 15px 0px 15px;
+    align-items: flex-end;
+}
+
+.singleMessageContainer .notMySingleInfo1{
+    align-items: flex-start;
+}
+
+/*---- End of single message style classes ------------------------*/
+.groupMessageContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 1px solid black; */
+}
+
+.notMyGroupMessage{
+    flex-direction: row;
+}
+
+.groupMessageContainer img{
+    margin-top: 10px;
+    height: 4rem;
+    width: 4rem;    
+}
+
+.groupMessageContainer .info2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+    gap: 10px;
+}
+
+.groupMessageContainer .notMyInfo2{
+    align-items: flex-start;
+}
+
+.groupMessageContainer .info1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.groupMessageContainer .notMyInfo1{
+    flex-direction: row;
+}
+
+
+
+
+
+
+.time{
+    color: blue;
+}
+
+.message .username{
+    font-size: 1.2rem;
+    padding: 10px 2px 2px 2px;
+    color: yellow;
+}
+
